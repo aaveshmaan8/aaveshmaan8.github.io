@@ -46,7 +46,6 @@ body::after {
 .layout {
     display: flex;
     height: 100vh;
-    overflow: hidden;
     position: relative;
     z-index: 2;
 }
@@ -55,9 +54,9 @@ body::after {
 .sidebar {
     width: 35%;
     padding: 100px 80px;
-    position: fixed;
     height: 100vh;
     overflow: auto;
+    flex-shrink: 0;
 
 }
 
@@ -172,13 +171,11 @@ nav a.active {
 
 /* ================= CONTENT ================= */
 .content {
-    margin-left: 35%;
     width: 65%;
     padding: 100px 110px;
     height: 100vh;
-    /* ADD */
     overflow-y: auto;
-    /* ADD */
+
 }
 
 /* ================= SECTIONS ================= */
