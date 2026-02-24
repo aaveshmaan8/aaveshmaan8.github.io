@@ -340,7 +340,7 @@ h2 {
     z-index: 1;
 }
 
-/* ================= MOBILE RESPONSIVE ================= */
+/* ================= MOBILE FIX - NO OVERLAP ================= */
 @media (max-width: 1000px) {
 
     body {
@@ -348,12 +348,12 @@ h2 {
     }
 
     .layout {
-        flex-direction: column;
+        display: block;
         height: auto;
-        overflow: visible;
     }
 
     .sidebar {
+        position: relative;
         width: 100%;
         height: auto;
         overflow: visible;
@@ -361,22 +361,38 @@ h2 {
     }
 
     .content {
+        position: relative;
         width: 100%;
         height: auto;
         overflow: visible;
         padding: 60px 25px;
+        margin: 0;
     }
 
+    /* Remove any fixed scroll behavior */
+    .sidebar,
+    .content {
+        max-height: none;
+    }
+
+    /* Reduce large heading size */
     .sidebar h1 {
-        font-size: 36px;
+        font-size: 34px;
+        line-height: 1.2;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .project-card {
-        padding: 28px;
+        padding: 25px;
+    }
+
+    section {
+        animation: none; /* prevents weird stacking animation bug */
+        opacity: 1;
+        transform: none;
     }
 }
 
