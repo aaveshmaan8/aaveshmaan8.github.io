@@ -351,6 +351,7 @@ h2 {
     z-index: 1;
 }
 
+<<<<<<< HEAD
 /* ================= PROFESSIONAL MOBILE RESPONSIVE ================= */
 @media (max-width: 1000px) {
 
@@ -364,10 +365,20 @@ h2 {
     }
 
     /* Sidebar becomes top hero section */
+=======
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1000px) {
+
+    .layout {
+        flex-direction: column;
+    }
+
+>>>>>>> e43cf73513bb02ed2bc690e6c22d436a20bbffa3
     .sidebar {
         position: relative;
         width: 100%;
         height: auto;
+<<<<<<< HEAD
         padding: 60px 30px 40px 30px;
         text-align: center;
     }
@@ -441,6 +452,19 @@ h2 {
     .skills span {
         font-size: 12px;
         padding: 8px 14px;
+=======
+        padding: 70px 35px;
+    }
+
+    .sidebar::after {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 70px 35px;
+>>>>>>> e43cf73513bb02ed2bc690e6c22d436a20bbffa3
     }
 }
 /* Hide sidebar scrollbar */
