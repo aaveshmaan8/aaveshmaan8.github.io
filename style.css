@@ -351,8 +351,8 @@ h2 {
     z-index: 1;
 }
 
-<<<<<<< HEAD
-/* ================= PROFESSIONAL MOBILE RESPONSIVE ================= */
+
+/* ================= MOBILE RESPONSIVE FIX ================= */
 @media (max-width: 1000px) {
 
     body {
@@ -361,112 +361,44 @@ h2 {
 
     .layout {
         flex-direction: column;
-        height: auto;
     }
 
-    /* Sidebar becomes top hero section */
-=======
-/* ================= RESPONSIVE ================= */
-@media (max-width: 1000px) {
-
-    .layout {
-        flex-direction: column;
-    }
-
->>>>>>> e43cf73513bb02ed2bc690e6c22d436a20bbffa3
     .sidebar {
         position: relative;
         width: 100%;
         height: auto;
-<<<<<<< HEAD
-        padding: 60px 30px 40px 30px;
-        text-align: center;
+        padding: 60px 25px;
+        overflow: visible;
     }
 
-    .sidebar h1 {
-        font-size: 34px;
-    }
-
-    .tagline {
-        font-size: 14px;
-    }
-
-    .intro {
-        font-size: 14px;
-        margin: 25px 0 35px;
-    }
-
-    /* Navigation center aligned */
-    nav {
-        margin-top: 20px;
-    }
-
-    nav a {
-        font-size: 12px;
-        margin-bottom: 14px;
-    }
-
-    .social-icons {
-        justify-content: center;
-    }
-
-    .resume-btn {
-        margin-top: 10px;
-    }
-
-    /* Content section */
     .content {
+        position: relative;
         margin-left: 0;
         width: 100%;
         height: auto;
-        padding: 50px 25px;
+        padding: 60px 25px;
+        overflow: visible;
     }
 
-    section {
-        margin-bottom: 70px;
-    }
-
-    h2 {
-        font-size: 22px;
-        text-align: center;
-    }
-
-    .project-card {
-        padding: 25px;
-        border-radius: 18px;
-    }
-
-    .project-title {
-        font-size: 18px;
-    }
-
-    .project-card p {
-        font-size: 14px;
-    }
-
-    .tech-stack span {
-        font-size: 11px;
-        padding: 6px 12px;
-    }
-
-    .skills span {
-        font-size: 12px;
-        padding: 8px 14px;
-=======
-        padding: 70px 35px;
-    }
-
+    /* Remove Divider */
     .sidebar::after {
         display: none;
     }
 
-    .content {
-        margin-left: 0;
-        width: 100%;
-        padding: 70px 35px;
->>>>>>> e43cf73513bb02ed2bc690e6c22d436a20bbffa3
+    /* Fix big heading size */
+    .sidebar h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .project-card {
+        padding: 30px;
     }
 }
+
 /* Hide sidebar scrollbar */
 .sidebar {
     scrollbar-width: none;          /* Firefox */
