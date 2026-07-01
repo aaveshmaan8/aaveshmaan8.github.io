@@ -1,0 +1,19 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+contact-backend/.env
+
+# Virtual environments
+contact-backend/venv/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+Thumbs.db
