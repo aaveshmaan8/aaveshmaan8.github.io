@@ -258,7 +258,7 @@ document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
 const contactForm = document.getElementById("contact-form");
 const submitBtn = document.getElementById("submitBtn");
 
-const API_URL = "http://127.0.0.1:5000/contact";
+const API_URL = "https://portfolio-contact-api-dsl2.onrender.com/contact";
 
 if (contactForm && submitBtn) {
 
